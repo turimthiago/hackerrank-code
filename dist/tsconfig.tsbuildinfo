@@ -162,12 +162,12 @@
         "affectsGlobalScope": true
       },
       "../src/Walk.ts": {
-        "version": "c6c670d11f9c9c2d3c8f4e3ab9f740eb2453670d036275f374fc3517e2717c7a",
-        "signature": "b451fdb8b0b5769e3348be29eacbc369e43fa012dded4dd97143cd016b2d67ef",
+        "version": "b0c60c33de7d8cfdbca53315f214375c4af27d307c5e422f38582a455c7d19bc",
+        "signature": "fb1a17c1b594e91e4cdee413a6754fcbb90d1170aa62ac9c8df4f66d894761d8",
         "affectsGlobalScope": false
       },
       "../src/Walk.spec.ts": {
-        "version": "53416f14abfc0f69e7f96fe0049aa935c884238669043997b8b04f9dc7f0ee59",
+        "version": "67974458c5d0d4b89edaef2c53ac42c6f3d1db9d4aa91dee8c3ec3ef78c2563a",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },

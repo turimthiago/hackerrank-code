@@ -1,4 +1,4 @@
-import { Walk } from "./Walk";
+import { Direction, Walk } from "./Walk";
 
 describe("Walk", () => {
   test("Should starts with zero valley", () => {
@@ -8,7 +8,7 @@ describe("Walk", () => {
   });
 
   test("Should one valley on UDDDUDUU walk", () => {
-    const steps = "UDDDUDUU".split("");
+    const steps = convertLetterToDirection("UDDDUDUU");
     const walk = new Walk();
     for (let direction of steps) {
       walk.to(direction);
@@ -18,7 +18,7 @@ describe("Walk", () => {
   });
 
   test("Should one valley on DDUUUUDD walk", () => {
-    const steps = "DDUUUUDD".split("");
+    const steps = convertLetterToDirection("DDUUUUDD");
     const walk = new Walk();
     for (let direction of steps) {
       walk.to(direction);
@@ -28,7 +28,7 @@ describe("Walk", () => {
   });
 
   test("Should one valley on DDUUDDUDUUUD walk", () => {
-    const steps = "DDUUDDUDUUUD".split("");
+    const steps = convertLetterToDirection("DDUUDDUDUUUD");
     const walk = new Walk();
     for (let direction of steps) {
       walk.to(direction);
@@ -38,7 +38,8 @@ describe("Walk", () => {
   });
 
   test("Should one valley on DUDDDUUDUU walk", () => {
-    const steps = "DUDDDUUDUU".split("");
+    const steps = convertLetterToDirection("DUDDDUUDUU");
+
     const walk = new Walk();
     for (let direction of steps) {
       walk.to(direction);
@@ -48,7 +49,7 @@ describe("Walk", () => {
   });
 
   test("Should one valley on DDUUUDDDUUUDDDUUUDDU walk", () => {
-    const steps = "DDUUUDDDUUUDDDUUUDDU".split("");
+    const steps = convertLetterToDirection("DDUUUDDDUUUDDDUUUDDU");
     const walk = new Walk();
     for (let direction of steps) {
       walk.to(direction);
@@ -56,4 +57,10 @@ describe("Walk", () => {
 
     expect(walk.countValleys()).toBe(4);
   });
+
+  function convertLetterToDirection(letters: string): Direction[] {
+    return letters
+      .split("")
+      .map((i) => (i === "D" ? Direction.DOWN : Direction.UP));
+  }
 });

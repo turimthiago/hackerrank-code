@@ -1,6 +1,6 @@
 export class Walk {
-  steps: string[] = [];
-  to(direction: string): void {
+  steps: Direction[] = [];
+  to(direction: Direction): void {
     this.steps.push(direction);
   }
 
@@ -8,18 +8,27 @@ export class Walk {
     let valleys = 0;
 
     let seaLevel = 0;
-    for (let step of this.steps) {
-      if (step === "U") {
+    for (let stepDirection of this.steps) {
+      if (stepDirection === Direction.UP) {
         seaLevel++;
-      } else if (step === "D") {
+      } else if (stepDirection === Direction.DOWN) {
         seaLevel--;
       }
 
-      if (seaLevel === 0 && step === "U") {
+      if (this.exitedValley(seaLevel, stepDirection)) {
         valleys++;
       }
     }
 
     return valleys;
   }
+
+  exitedValley(seaLevel: number, stepDirection: Direction): boolean {
+    return seaLevel === 0 && stepDirection === Direction.UP;
+  }
+}
+
+export enum Direction {
+  UP,
+  DOWN,
 }
