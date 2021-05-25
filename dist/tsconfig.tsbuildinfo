@@ -161,23 +161,13 @@
         "signature": "506b80b9951c9381dc5f11897b31fca5e2a65731d96ddefa19687fbc26b23c6e",
         "affectsGlobalScope": true
       },
-      "../node_modules/typescript/lib/typescript.d.ts": {
-        "version": "b4e3edb529b83431180aba7ea2d39302afe8919962344db98d71fe0253951b62",
-        "signature": "b4e3edb529b83431180aba7ea2d39302afe8919962344db98d71fe0253951b62",
-        "affectsGlobalScope": false
-      },
       "../src/Walk.ts": {
         "version": "c6c670d11f9c9c2d3c8f4e3ab9f740eb2453670d036275f374fc3517e2717c7a",
         "signature": "b451fdb8b0b5769e3348be29eacbc369e43fa012dded4dd97143cd016b2d67ef",
         "affectsGlobalScope": false
       },
-      "../src/Avid.spec.ts": {
-        "version": "35ff88d86dfde5b210c39a636df288f03730f53fa5d01f529c23a56eb0ef6935",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
-        "affectsGlobalScope": false
-      },
-      "../src/main.ts": {
-        "version": "57c31d8031b97a5413e231bd39b7dc27ddc75cef02ad47bd325c23ce9187eda5",
+      "../src/Walk.spec.ts": {
+        "version": "53416f14abfc0f69e7f96fe0049aa935c884238669043997b8b04f9dc7f0ee59",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -810,11 +800,7 @@
       "../node_modules/@types/yargs/index.d.ts": [
         "../node_modules/@types/yargs-parser/index.d.ts"
       ],
-      "../src/Avid.spec.ts": [
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/Walk.ts"
-      ],
-      "../src/main.ts": [
+      "../src/Walk.spec.ts": [
         "../src/Walk.ts"
       ]
     },
@@ -1175,10 +1161,8 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../node_modules/typescript/lib/typescript.d.ts",
-      "../src/Avid.spec.ts",
-      "../src/Walk.ts",
-      "../src/main.ts"
+      "../src/Walk.spec.ts",
+      "../src/Walk.ts"
     ]
   },
   "version": "4.2.4"
