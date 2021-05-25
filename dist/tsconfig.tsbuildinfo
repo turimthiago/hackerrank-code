@@ -167,12 +167,17 @@
         "affectsGlobalScope": false
       },
       "../src/Walk.ts": {
-        "version": "306727c75739f44bb3cd636d2ecad337f4991484c39d6e57b3eaecc34c5303a5",
-        "signature": "8826ae87cffffd8cb7f7c08488db3c7a61324ce5539574c5caf3802075c7194f",
+        "version": "c6c670d11f9c9c2d3c8f4e3ab9f740eb2453670d036275f374fc3517e2717c7a",
+        "signature": "b451fdb8b0b5769e3348be29eacbc369e43fa012dded4dd97143cd016b2d67ef",
         "affectsGlobalScope": false
       },
       "../src/Avid.spec.ts": {
-        "version": "482a8e7ba4f318f71dac82839d4fd59c7c2e0e13ea9f45beade7cd17b66548e2",
+        "version": "35ff88d86dfde5b210c39a636df288f03730f53fa5d01f529c23a56eb0ef6935",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/main.ts": {
+        "version": "57c31d8031b97a5413e231bd39b7dc27ddc75cef02ad47bd325c23ce9187eda5",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -808,6 +813,9 @@
       "../src/Avid.spec.ts": [
         "../node_modules/typescript/lib/typescript.d.ts",
         "../src/Walk.ts"
+      ],
+      "../src/main.ts": [
+        "../src/Walk.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1169,7 +1177,8 @@
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../node_modules/typescript/lib/typescript.d.ts",
       "../src/Avid.spec.ts",
-      "../src/Walk.ts"
+      "../src/Walk.ts",
+      "../src/main.ts"
     ]
   },
   "version": "4.2.4"
