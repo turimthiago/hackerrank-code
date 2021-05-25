@@ -23,7 +23,7 @@ export class Walk {
     return valleys;
   }
 
-  exitedValley(seaLevel: number, stepDirection: Direction): boolean {
+  private exitedValley(seaLevel: number, stepDirection: Direction): boolean {
     return seaLevel === 0 && stepDirection === Direction.UP;
   }
 }
