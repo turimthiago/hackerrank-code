@@ -3,7 +3,6 @@ import { Direction, Walk } from "./Walk";
 describe("Walk", () => {
   test("Should starts with zero valley", () => {
     const walk = new Walk();
-
     expect(walk.countValleys()).toBe(0);
   });
 
@@ -13,7 +12,6 @@ describe("Walk", () => {
     for (let direction of steps) {
       walk.to(direction);
     }
-
     expect(walk.countValleys()).toBe(1);
   });
 
@@ -23,7 +21,6 @@ describe("Walk", () => {
     for (let direction of steps) {
       walk.to(direction);
     }
-
     expect(walk.countValleys()).toBe(1);
   });
 
@@ -33,18 +30,15 @@ describe("Walk", () => {
     for (let direction of steps) {
       walk.to(direction);
     }
-
     expect(walk.countValleys()).toBe(2);
   });
 
   test("Should one valley on DUDDDUUDUU walk", () => {
     const steps = convertLetterToDirection("DUDDDUUDUU");
-
     const walk = new Walk();
     for (let direction of steps) {
       walk.to(direction);
     }
-
     expect(walk.countValleys()).toBe(2);
   });
 
@@ -54,7 +48,6 @@ describe("Walk", () => {
     for (let direction of steps) {
       walk.to(direction);
     }
-
     expect(walk.countValleys()).toBe(4);
   });
 
